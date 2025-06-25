@@ -9,6 +9,8 @@ public class Pet {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long petId;
+    
+
     private String petname;
     private String type;
     private double weight;
@@ -25,7 +27,9 @@ public class Pet {
     public Long getPetId() {
         return petId;
     }
-
+    public void setPetId(Long petId) {
+        this.petId = petId;
+    }
 
     public String getPetname() {
         return petname;
@@ -61,10 +65,8 @@ public class Pet {
 
     public Pet(){}
 
-    public void setId(Long petId2) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'setId'");
-    }
+    
+    
 
 
 
