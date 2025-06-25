@@ -16,6 +16,8 @@ public class Pet {
     private double weight;
     private String breed;
 
+    public Pet(){}
+    
     public Pet(Long petId, String petname, String type, double weight, String breed) {
         this.petId = petId;
         this.petname = petname;
@@ -63,7 +65,7 @@ public class Pet {
         this.breed = breed;
     }
 
-    public Pet(){}
+    
 
     
     
