@@ -29,7 +29,7 @@ public class PetService {
     }
 
     public Pet update(Long petId, Pet newData) {
-        newData.setId(petId);
+        newData.setPetId(petId);
         return repository.save(newData);
     }
 
